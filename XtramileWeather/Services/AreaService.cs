@@ -20,7 +20,7 @@ namespace XtramileWeather.Services
             return GetCities().Where(x => x.CountryId == countryId).Select(x => new SelectListItem()
             {
                 Text = x.Name,
-                Value = x.CountryId.ToString()
+                Value = x.Id.ToString()
             });
         }
 
@@ -29,6 +29,8 @@ namespace XtramileWeather.Services
             return new List<City>() {
                 new City{ Id = 1, CountryId = 1, Name = "New York"},
                 new City{ Id = 2, CountryId = 2, Name = "London"},
+                new City{ Id = 3, CountryId = 1, Name = "Washington"},
+                new City{ Id = 4, CountryId = 2, Name = "Manchester"},
             };
         }
 

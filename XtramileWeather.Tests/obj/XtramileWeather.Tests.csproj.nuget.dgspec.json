@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\Source\\repos\\Xtramile2\\affan-xtramile-test\\XtramileWeather.Tests\\XtramileWeather.Tests.csproj": {}
+    "C:\\Users\\ASUS\\Source\\repos\\xtramileclone\\XtramileWeather\\XtramileWeather.Tests\\XtramileWeather.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\Source\\repos\\Xtramile2\\affan-xtramile-test\\XtramileWeather.Tests\\XtramileWeather.Tests.csproj": {
+    "C:\\Users\\ASUS\\Source\\repos\\xtramileclone\\XtramileWeather\\XtramileWeather.Tests\\XtramileWeather.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Source\\repos\\Xtramile2\\affan-xtramile-test\\XtramileWeather.Tests\\XtramileWeather.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Source\\repos\\xtramileclone\\XtramileWeather\\XtramileWeather.Tests\\XtramileWeather.Tests.csproj",
         "projectName": "XtramileWeather.Tests",
-        "projectPath": "C:\\Users\\ASUS\\Source\\repos\\Xtramile2\\affan-xtramile-test\\XtramileWeather.Tests\\XtramileWeather.Tests.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Source\\repos\\xtramileclone\\XtramileWeather\\XtramileWeather.Tests\\XtramileWeather.Tests.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Source\\repos\\Xtramile2\\affan-xtramile-test\\XtramileWeather.Tests\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Source\\repos\\xtramileclone\\XtramileWeather\\XtramileWeather.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -32,8 +32,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\ASUS\\Source\\repos\\Xtramile2\\affan-xtramile-test\\XtramileWeather\\XtramileWeather.csproj": {
-                "projectPath": "C:\\Users\\ASUS\\Source\\repos\\Xtramile2\\affan-xtramile-test\\XtramileWeather\\XtramileWeather.csproj"
+              "C:\\Users\\ASUS\\Source\\repos\\xtramileclone\\XtramileWeather\\XtramileWeather\\XtramileWeather.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Source\\repos\\xtramileclone\\XtramileWeather\\XtramileWeather\\XtramileWeather.csproj"
               }
             }
           }
@@ -92,14 +92,14 @@
         }
       }
     },
-    "C:\\Users\\ASUS\\Source\\repos\\Xtramile2\\affan-xtramile-test\\XtramileWeather\\XtramileWeather.csproj": {
+    "C:\\Users\\ASUS\\Source\\repos\\xtramileclone\\XtramileWeather\\XtramileWeather\\XtramileWeather.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Source\\repos\\Xtramile2\\affan-xtramile-test\\XtramileWeather\\XtramileWeather.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Source\\repos\\xtramileclone\\XtramileWeather\\XtramileWeather\\XtramileWeather.csproj",
         "projectName": "XtramileWeather",
-        "projectPath": "C:\\Users\\ASUS\\Source\\repos\\Xtramile2\\affan-xtramile-test\\XtramileWeather\\XtramileWeather.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Source\\repos\\xtramileclone\\XtramileWeather\\XtramileWeather\\XtramileWeather.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Source\\repos\\Xtramile2\\affan-xtramile-test\\XtramileWeather\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Source\\repos\\xtramileclone\\XtramileWeather\\XtramileWeather\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
