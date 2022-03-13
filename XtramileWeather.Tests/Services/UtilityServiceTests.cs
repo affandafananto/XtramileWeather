@@ -12,6 +12,7 @@ namespace XtramileWeather.Tests.Services
             var result = service.ConvertFahrenheitToCelsius(50);
 
             Assert.Equal(10, result);
+
         }
     }
 }
