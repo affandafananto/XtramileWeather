@@ -29,7 +29,6 @@ namespace XtramileWeather
             services.AddScoped<IAreaService, AreaService>();
             services.AddScoped<IWeatherService, WeatherService>();
             services.AddScoped<IUtilityService, UtilityService>();
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
