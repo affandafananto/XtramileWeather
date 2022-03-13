@@ -1,0 +1,105 @@
+﻿@model XtramileWeather.Models.WeatherViewModel
+@{
+    ViewData["Title"] = "Weather";
+}
+
+<h1>Weather</h1>
+
+<div class="form-horizontal">
+    <div class="form-group">
+        <label class="control-label col-md-2">Country:</label>
+        <div class="col-md-10">
+            @Html.DropDownListFor(m => m.CountryId, Model.Countries, "Select country", new { @id = "CountrySelect", @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">City:</label>
+        <div class="col-md-10">
+            @Html.DropDownListFor(m => m.CityId, Enumerable.Empty<SelectListItem>(), "Select city", new { @id = "CitySelect", @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="col-md-12 row">
+        <div class="col-md-2">Location:</div>
+        <div id="location" , class="col-md-10"></div>
+    </div>
+    <div class="col-md-12 row">
+        <div class="col-md-2">Coordinate:</div>
+        <div id="coordinate" , class="col-md-10"></div>
+    </div>
+    <div class="col-md-12 row">
+        <div class="col-md-2">Time:</div>
+        <div id="time" , class="col-md-10"></div>
+    </div>
+    <div class="col-md-12 row">
+        <div class="col-md-2">Wind:</div>
+        <div id="wind" , class="col-md-10"></div>
+    </div>
+    <div class="col-md-12 row">
+        <div class="col-md-2">Visibility:</div>
+        <div id="visibility" , class="col-md-10"></div>
+    </div>
+    <div class="col-md-12 row">
+        <div class="col-md-2">Sky Conditions:</div>
+        <div id="skyConditions" , class="col-md-10"></div>
+    </div>
+    <div class="col-md-12 row">
+        <div class="col-md-2">Temp Celsius:</div>
+        <div id="temperatureCelsius" , class="col-md-10"></div>
+    </div>
+    <div class="col-md-12 row">
+        <div class="col-md-2">Temp Fahrenheit:</div>
+        <div id="temperatureFahrenheit" , class="col-md-10"></div>
+    </div>
+    <div class="col-md-12 row">
+        <div class="col-md-2">Dew Point:</div>
+        <div id="dewPoint" , class="col-md-10"></div>
+    </div>
+    <div class="col-md-12 row">
+        <div class="col-md-2">Humidity:</div>
+        <div id="humidity" , class="col-md-10"></div>
+    </div>
+    <div class="col-md-12 row">
+        <div class="col-md-2">Pressure:</div>
+        <div id="pressure" , class="col-md-10"></div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+     
+    $(document).ready(function () {
+        $("#CountrySelect").change(function () {
+            $.getJSON("/Weather/GetCitiesByCountry", { countryId: $("#CountrySelect").val() },
+                function (data) {
+                    $('#CitySelect').empty();
+                    $('#CitySelect').append('<option value=>Select city</option>');
+                    data.forEach(function (item) {
+                        $('#CitySelect').append('<option value="' + item.value + '">' + item.text + '</option>');
+                    });
+                });
+        });
+    });
+
+    $(document).ready(function () {
+        $("#CitySelect").change(function () {
+            $.getJSON("/Weather/GetCurrentWeather", { cityId: $("#CitySelect").val() },
+                function (data) {
+                    console.log(data);
+                    $("#location").text(data.location);
+                    $("#coordinate").text(data.coordinate);
+                    $("#time").text(data.time);
+                    $("#wind").text(data.wind);
+                    $("#visibility").text(data.visibility);
+                    $("#skyConditions").text(data.skyConditions);
+                    $("#temperatureCelsius").text(data.temperatureCelsius);
+                    $("#temperatureFahrenheit").text(data.temperatureFahrenheit);
+                    $("#dewPoint").text(data.dewPoint);
+                    $("#humidity").text(data.humidity);
+                    $("#pressure").text(data.pressure);
+                });
+        });
+    });
+
+</script>
