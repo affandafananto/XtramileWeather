@@ -12,7 +12,7 @@ namespace XtramileWeather.Models
         public Coordinate Coord { get; set; }
         public IEnumerable<WeatherObj> Weather { get; set; }
         public MainObj Main { get; set; }
-        public string Visibility { get; set; }
+        public long Visibility { get; set; }
         public WindObj Wind { get; set; }
         public long Dt { get; set; }
         public SysObj Sys { get; set; }

@@ -98,8 +98,7 @@ namespace XtramileWeather.Tests.Services
 
             var response = new HttpResponseMessage
             {
-                StatusCode = HttpStatusCode.BadRequest,
-                Content = new StringContent(MockApiResponse),
+                StatusCode = HttpStatusCode.BadRequest
             };
 
             handlerMock
@@ -135,8 +134,7 @@ namespace XtramileWeather.Tests.Services
 
             var response = new HttpResponseMessage
             {
-                StatusCode = HttpStatusCode.NotFound,
-                Content = new StringContent(MockApiResponse),
+                StatusCode = HttpStatusCode.NotFound
             };
 
             handlerMock

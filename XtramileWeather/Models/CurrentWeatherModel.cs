@@ -9,7 +9,7 @@ namespace XtramileWeather.Models
     {
         public string Location { get; set; }
         public string Coordinate { get; set; }
-        public DateTime Time { get; set; }
+        public string Time { get; set; }
         public string Wind { get; set; }
         public string Visibility { get; set; }
         public string SkyConditions { get; set; }

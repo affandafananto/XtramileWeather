@@ -25,17 +25,17 @@ namespace XtramileWeather.Services
             return new CurrentWeatherModel
             {
                 Location = response.Name + ", " + response.Sys.Country,
-                Coordinate = "lat: " + response.Coord.Lat + ",lon: " + response.Coord.Lon,
-                Time = DateTimeOffset.FromUnixTimeSeconds(response.Dt).UtcDateTime.ToLocalTime(),
-                Wind = "Speed: " + response.Wind.Speed + ", Deg: " + response.Wind.Deg,
-                Visibility = response.Visibility,
+                Coordinate = "lat: " + response.Coord.Lat + ", lon: " + response.Coord.Lon,
+                Time = DateTimeOffset.FromUnixTimeSeconds(response.Dt).UtcDateTime.ToLocalTime().ToString("dddd, dd MMMM yyyy HH:mm"),
+                Wind = "Speed: " + response.Wind.Speed + " m/s" + ", Deg: " + response.Wind.Deg,
+                Visibility = (response.Visibility / 1000).ToString() + "km" ,
                 SkyConditions = response.Weather.FirstOrDefault() != null ?
                     response.Weather.First().Main + " - " + response.Weather.First().Description : string.Empty,
-                TemperatureCelsius = _utilityService.ConvertFahrenheitToCelsius(response.Main.Temp).ToString(),
-                TemperatureFahrenheit = response.Main.Temp.ToString(),
+                TemperatureCelsius = _utilityService.ConvertFahrenheitToCelsius(response.Main.Temp).ToString("0.00"),
+                TemperatureFahrenheit = response.Main.Temp.ToString("0.00"),
                 DewPoint = string.Empty,
-                Humidity = response.Main.Humidity.ToString(),
-                Pressure = response.Main.Pressure.ToString()
+                Humidity = response.Main.Humidity.ToString() + "%",
+                Pressure = response.Main.Pressure.ToString() + "hPa"
             };
         }
 
