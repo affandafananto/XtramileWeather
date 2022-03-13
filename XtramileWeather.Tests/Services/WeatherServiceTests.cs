@@ -126,5 +126,42 @@ namespace XtramileWeather.Tests.Services
             Assert.Equal(HttpStatusCode.BadRequest, response.StatusCode);
             Assert.Null(result);
         }
+
+        [Fact]
+        public async Task GetWeather_ReturnsNotFound()
+        {
+            // Arrange
+            var handlerMock = new Mock<HttpMessageHandler>();
+
+            var response = new HttpResponseMessage
+            {
+                StatusCode = HttpStatusCode.NotFound,
+                Content = new StringContent(MockApiResponse),
+            };
+
+            handlerMock
+               .Protected()
+               .Setup<Task<HttpResponseMessage>>(
+                  "SendAsync",
+                  ItExpr.IsAny<HttpRequestMessage>(),
+                  ItExpr.IsAny<CancellationToken>())
+               .ReturnsAsync(response);
+
+            var mockHttpClientFactory = new Mock<IHttpClientFactory>();
+            var mockUtilityService = new Mock<IUtilityService>();
+
+            var httpClient = new HttpClient(handlerMock.Object)
+            {
+                BaseAddress = new Uri("http://test.com/"),
+            };
+
+            mockHttpClientFactory.Setup(x => x.CreateClient(It.IsAny<string>())).Returns(httpClient).Verifiable();
+            var service = new WeatherService(mockHttpClientFactory.Object, mockUtilityService.Object);
+
+            var result = await service.GetWeather("asdfgh");
+
+            Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
+            Assert.Null(result);
+        }
     }
 }

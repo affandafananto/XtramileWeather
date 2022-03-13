@@ -7833,11 +7833,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS\\Source\\repos\\xtramileclone\\XtramileWeather\\XtramileWeather.Tests\\XtramileWeather.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\Source\\repos\\xclone\\XtramileWeather\\XtramileWeather.Tests\\XtramileWeather.Tests.csproj",
       "projectName": "XtramileWeather.Tests",
-      "projectPath": "C:\\Users\\ASUS\\Source\\repos\\xtramileclone\\XtramileWeather\\XtramileWeather.Tests\\XtramileWeather.Tests.csproj",
+      "projectPath": "C:\\Users\\ASUS\\Source\\repos\\xclone\\XtramileWeather\\XtramileWeather.Tests\\XtramileWeather.Tests.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS\\Source\\repos\\xtramileclone\\XtramileWeather\\XtramileWeather.Tests\\obj\\",
+      "outputPath": "C:\\Users\\ASUS\\Source\\repos\\xclone\\XtramileWeather\\XtramileWeather.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -7858,8 +7858,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\ASUS\\Source\\repos\\xtramileclone\\XtramileWeather\\XtramileWeather\\XtramileWeather.csproj": {
-              "projectPath": "C:\\Users\\ASUS\\Source\\repos\\xtramileclone\\XtramileWeather\\XtramileWeather\\XtramileWeather.csproj"
+            "C:\\Users\\ASUS\\Source\\repos\\xclone\\XtramileWeather\\XtramileWeather\\XtramileWeather.csproj": {
+              "projectPath": "C:\\Users\\ASUS\\Source\\repos\\xclone\\XtramileWeather\\XtramileWeather\\XtramileWeather.csproj"
             }
           }
         }

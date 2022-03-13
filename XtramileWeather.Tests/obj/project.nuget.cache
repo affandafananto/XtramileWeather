@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DfK+GjivZvK59+QIyRBIK6bW0u/gQqNSWxf1+UBP9nZCVDSNTsyxnnTXbOSLVO0fvlsNuy0H0Qh2ixW/LqGWig==",
+  "dgSpecHash": "48ZZjy4a3v6VNgKx9Fjh3TlXg6ZypGjxFOi3lx41wlIJLxDF+yncXlqlRgIVbLKqQE8KP5oveWK/RuyzXip08Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUS\\Source\\repos\\xtramileclone\\XtramileWeather\\XtramileWeather.Tests\\XtramileWeather.Tests.csproj",
+  "projectFilePath": "C:\\Users\\ASUS\\Source\\repos\\xclone\\XtramileWeather\\XtramileWeather.Tests\\XtramileWeather.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
